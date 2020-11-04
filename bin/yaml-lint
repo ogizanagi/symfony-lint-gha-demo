@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Yaml\Command\LintCommand;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+(new Application())->add($command = new LintCommand())
+    ->getApplication()
+    ->setDefaultCommand($command->getName(), true)
+    ->run()
+;
