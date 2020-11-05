@@ -34,7 +34,12 @@ jobs:
           restore-keys: composer-
 
       - name: Install dependencies
+        id: install
         run: composer install
 
       - name: Lint YAML files
-        run: bin/yaml-lint --parse-tags ./yaml
+        run: bin/yaml-lint --parse-tags ./yaml --ansi
+
+      - name: Lint from STDIN
+        if: always() && steps.install.outcome == 'success'
+        run: cat ./yaml/invalid-file.yaml | bin/yaml-lint --parse-tags --ansi -

@@ -1674,12 +1674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ogizanagi/symfony.git",
-                "reference": "82c50eab1e6d4266e9a176ea1f74048902a52004"
+                "reference": "2d4a9d31f19e4fc44b5d35f9e2b66b5a1c865ee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ogizanagi/symfony/zipball/82c50eab1e6d4266e9a176ea1f74048902a52004",
-                "reference": "82c50eab1e6d4266e9a176ea1f74048902a52004",
+                "url": "https://api.github.com/repos/ogizanagi/symfony/zipball/2d4a9d31f19e4fc44b5d35f9e2b66b5a1c865ee7",
+                "reference": "2d4a9d31f19e4fc44b5d35f9e2b66b5a1c865ee7",
                 "shasum": ""
             },
             "require": {
@@ -1859,7 +1859,7 @@
             "support": {
                 "source": "https://github.com/ogizanagi/symfony/tree/lint-yaml-gha"
             },
-            "time": "2020-11-04T08:12:46+00:00"
+            "time": "2020-11-05T08:02:54+00:00"
         },
         {
             "name": "twig/twig",
