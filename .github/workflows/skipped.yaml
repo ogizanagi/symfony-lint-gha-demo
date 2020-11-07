@@ -1,0 +1,16 @@
+name: skipped workflow
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+
+  skip:
+    runs-on: ubuntu-latest
+    if: 1 == 0
+
+    steps:
+      - name: Lint YAML files
+        run: echo Skipped
